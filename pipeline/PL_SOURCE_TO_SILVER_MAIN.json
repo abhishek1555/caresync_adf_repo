@@ -48,6 +48,7 @@
 						"value": "@activity('Read Source Tables List').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Set variable1",
@@ -61,7 +62,7 @@
 							"typeProperties": {
 								"variableName": "test",
 								"value": {
-									"value": "@item().table_id",
+									"value": "@string(item().table_id)",
 									"type": "Expression"
 								}
 							}
